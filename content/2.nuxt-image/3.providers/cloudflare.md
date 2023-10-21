@@ -1,6 +1,6 @@
 ---
 title: Cloudflare
-description: Nuxt Image has first class integration with Cloudflare.
+description: Nuxt Image dispose d'une intégration de premier ordre avec Cloudflare.
 links:
   - label: Source
     icon: i-simple-icons-github
@@ -8,9 +8,9 @@ links:
     size: xs
 ---
 
-Integration between [Cloudflare](https://developers.cloudflare.com/images/) and the image module.
+Intégration entre [Cloudflare](https://developers.cloudflare.com/images/) et le module d'image.
 
-To use this provider you just need to specify the base url (zone) of your service:
+Pour utiliser ce fournisseur, vous avez simplement besoin de spécifier l'URL de base (zone) de votre service :
 
 ```ts [nuxt.config.ts]
 export default defineNuxtConfig({
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 })
 ```
 
-**Example:**
+**Exemple :**
 
 ```vue
 <NuxtImg provider="cloudflare" src="/burger.jpeg" height="300" :modifiers="{ fit: 'contain' }" />
@@ -32,8 +32,8 @@ export default defineNuxtConfig({
 
 ### `baseURL`
 
-Default: `/`
+Par défaut : `/`
 
-Your deployment's domain (zone).
+Le domaine de votre déploiement (zone).
 
-**Note:** `/cdn-cgi/image/` will be automatically appended for generating URLs.
+**Note :** `/cdn-cgi/image/` sera automatiquement ajouté pour générer les URLs.

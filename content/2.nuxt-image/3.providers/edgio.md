@@ -8,26 +8,27 @@ links:
     size: xs
 ---
 
-Edgio provides a simple HTTP service for optimizing images.
+Edgio fournit un service HTTP simple pour optimiser les images.
 
 ::callout
-The image optimizer will only return an optimized image for mobile browsers. Desktop browsers are served the original image.
+#summary
+L'optimiseur d'images ne renverra qu'une image optimisée aux navigateurs mobiles. Les navigateurs de bureau reçoivent l'image d'origine.
 ::
 
-This integration works out of the box without need to configure!  See the [Documentation](https://docs.edg.io/guides/image_optimization) for more information.
+Cette intégration fonctionne directement sans avoir besoin de configuration ! Consultez la [Documentation](https://docs.edg.io/guides/image_optimization) pour plus d'informations.
 
-**Example:**
+**Exemple :**
 
 ```vue
 <NuxtImg provider="edgio" src="https://i.imgur.com/LFtQeX2.jpeg" width="200" height="200" quality="80" />
 ```
 
-## Modifiers
+## Modificateurs
 
-Edgio supports the following modifiers: `height`, `width` and `quality`
+Edgio prend en charge les modificateurs suivants : `height`, `width` et `quality`
 
 ## Options
 
 ### `baseURL`
 
-- Default: `https://opt.moovweb.net`
+- Par défaut : `https://opt.moovweb.net`
